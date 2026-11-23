@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f97316">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>Laddoo vs Me 🥊</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <h1>Laddoo vs Me 🥊</h1>
+      <p id="quote" class="quote"></p>
+    </div>
+    <div id="chips" class="chips"></div>
+  </header>
+
+  <nav class="tabs">
+    <button data-tab="today" class="active">📋 Aaj</button>
+    <button data-tab="stats">📈 Stats</button>
+    <button data-tab="plan">🗺️ Plan</button>
+    <button data-tab="backup">💾 Backup</button>
+  </nav>
+
+  <main id="app">
+    <div id="banner"></div>
+    <section id="today" class="tab"></section>
+    <section id="stats" class="tab" hidden></section>
+    <section id="plan" class="tab" hidden></section>
+    <section id="backup" class="tab" hidden></section>
+  </main>
+
+  <!-- Craving SOS -->
+  <div id="sosModal" class="modal" hidden>
+    <div class="modal-box">
+      <h2>🚨 Craving SOS</h2>
+      <p id="sosRoast" class="roast"></p>
+      <div id="sosTimer" class="timer">10:00</div>
+      <ol class="steps">
+        <li>💧 Ek bada glass paani piyo</li>
+        <li>🥜 <b>Desk Dabba</b> kholo (mathri ka dabba nahi!)</li>
+        <li>🚶 2 minute tehlo / 10 squats</li>
+        <li>😮‍💨 5 lambi saans</li>
+      </ol>
+      <div class="row">
+        <button class="btn good" data-act="sosWin">Craving gayi! 💪</button>
+        <button class="btn bad" data-act="sosLose">Haar gaya 😅</button>
+      </div>
+      <button class="link" data-act="sosClose">Band karo</button>
+    </div>
+  </div>
+
+  <!-- Punishment wheel -->
+  <div id="wheelModal" class="modal" hidden>
+    <div class="modal-box">
+      <h2>🎡 Wheel of Penance</h2>
+      <p class="muted">Achhi wali saza — jo bhi aaye, karna padega 😈</p>
+      <div class="wheel-wrap">
+        <div class="pointer">▼</div>
+        <canvas id="wheel" width="300" height="300"></canvas>
+      </div>
+      <p id="wheelResult" class="roast"></p>
+      <div class="row">
+        <button class="btn" id="spinBtn" data-act="spin">Ghumao! 🌀</button>
+        <button class="link" data-act="wheelClose">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" hidden></div>
+  <input type="file" id="importFile" accept=".json,.txt,application/json,text/plain" hidden>
+
+  <script src="content.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
