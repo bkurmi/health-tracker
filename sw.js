@@ -1,6 +1,6 @@
 // Network-first so updates show up immediately; cache fallback for offline use.
-const CACHE = 'operation-227-v10';
-const ASSETS = ['./', './index.html', './styles.css', './content.js', './app.js', './manifest.webmanifest', './icon.svg'];
+const CACHE = 'operation-227-v11';
+const ASSETS = ['./', './index.html', './styles.css?v=11', './content.js?v=11', './app.js?v=11', './manifest.webmanifest', './icon.svg'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)));
