@@ -170,3 +170,96 @@ const PRAISE = [
   'Too good! ⭐', 'Shabaash! 👏', 'Bilkul sahi track pe 🚂', 'Future wala tum proud hai 🙌',
   'Consistency king 👑', 'Chha gaye guru! 🌟',
 ];
+
+const SUPERFOODS = [
+  {
+    name: 'Soya Chunks (Soyabean)',
+    icon: '🟤',
+    badge: '52% Protein Bomb',
+    target: 'Vegetarian Protein & Muscle Repair',
+    fact: '30g soya chunks me ~15.6g pure vegetarian protein hota hai — paneer se lagbhag double! Isme zero cholesterol aur negligible saturated fat hota hai.',
+    science: 'Soya isoflavones liver ke LDL receptors ko stimulate karte hain, jisse blood me se bad cholesterol jaldi clear hota hai.',
+    howToEat: 'Garam paani me 10 min ubalo, 2–3 baar thande paani se squeeze karke saaf karo. Pyaaz, tamatar, shimla mirch ke sath bhurji ya sabzi bana lo.'
+  },
+  {
+    name: 'Jau (Barley) & Oats Atta',
+    icon: '🌾',
+    badge: 'Beta-Glucan LDL Sponge',
+    target: 'Direct LDL Reduction (149 → <100)',
+    fact: 'Jau aur oats me Beta-Glucan naam ka powerful soluble fiber hota hai jo pet me gel banake cholesterol ko trap kar leta hai.',
+    science: 'Beta-glucan bile acids ko bind karke bahar nikaalta hai. Liver ko naya bile banane ke liye khoon se LDL khechna padta hai — isse LDL direct 8-15% drop hota hai!',
+    howToEat: 'Ghar ke gehun ke atte me 30% jau (barley) ya oats ka atta mix karwa lo. Roti soft banti hai aur soluble fiber 3x badh jata hai.'
+  },
+  {
+    name: 'Pisi Hui Alsi (Ground Flaxseeds)',
+    icon: '🌰',
+    badge: 'Omega-3 (ALA) + HDL Booster',
+    target: 'HDL Boost (57 → 60+) & Arteries Protection',
+    fact: 'Alsi me Alpha-Linolenic Acid (ALA) omega-3 aur Lignans hote hain jo arteries me inflammation aur plaque jamne se rokte hain.',
+    science: 'Saboot (whole) alsi bina pache seedhe nikal jaati hai! Pisi hui (ground) alsi hi body absorb kar sakti hai.',
+    howToEat: 'Alsi ko halka dry roast karke mixie me pees lo aur fridge me airtight dabba rakho. Roz subah 1 teaspoon dahi, dal ya paani me mila ke lo.'
+  },
+  {
+    name: 'Dry Roasted Makhana (Foxnuts)',
+    icon: '🍿',
+    badge: 'Zero-Trans-Fat Desk Crunch',
+    target: 'Kill Mathri / Namkeen Addiction',
+    fact: 'Mathri me 3-4 chammach palm oil aur trans fat hota hai. Makhana me zero trans fat, low calories aur rich magnesium hota hai.',
+    science: 'Low Glycemic Index hone ki wajah se ye blood sugar ko spike nahi karta aur dopaminergic crunch craving ko shant karta hai.',
+    howToEat: 'Kadhai me bina tel ya sirf 1/2 chammach ghee me makhana roast karo. Upar se chaat masala, kaala namak aur kali mirch daalo. Desk Dabba me rakho!'
+  },
+  {
+    name: 'Moong Dal & Besan Chilla',
+    icon: '🥞',
+    badge: 'Low-Carb Protein Breakfast',
+    target: 'Stop Poha/Paratha Sugar Spikes',
+    fact: 'Poha aur paratha carbohydrates se bhare hote hain jo 2 ghante baad achanak craving laate hain. Moong/besan chilla 3-4 ghante tak pet bhara rakhta hai.',
+    science: 'Dal aur besan me high satiety index aur complex fiber hota hai jo ghrelin (hunger hormone) ko suppress karta hai.',
+    howToEat: 'Peeli moong dal ya besan ke ghol me barik pyaaz, gajar, palak aur thoda grated paneer mila ke tawa pe chilla banao. Green chutney ke sath lo.'
+  },
+  {
+    name: 'Bhuna Kala Chana (Roasted Gram)',
+    icon: '🫘',
+    badge: 'Desk Dabba Anchor',
+    target: '1–4 PM Danger Zone Shield',
+    fact: '30g bhuna chana me 6g protein aur 5g soluble fiber hota hai. Ye desk job ke liye world ka best desi snack hai.',
+    science: 'Chane ka chhilka insoluble + soluble fiber ka perfect balance hai jo gut bacteria ko feed karke short-chain fatty acids (SCFA) banata hai jo cholesterol synthesis kam karte hain.',
+    howToEat: 'Chhilke ke sath khao! Desk pe 30g ka naap dabba me rakho. Chai ke sath biscuits ki jagah sirf yahi khao.'
+  },
+  {
+    name: 'Methi Dana (Fenugreek Seeds)',
+    icon: '🌿',
+    badge: 'Galactomannan Fiber',
+    target: 'Triglycerides & LDL Control',
+    fact: 'Methi ke beej me 50% dietary fiber hota hai aur ek unique compound saponins jo cholesterol absorption ko block karta hai.',
+    science: 'Studies show that daily 5g methi seeds LDL ko significantly lower karte hain bina HDL ko kam kiye.',
+    howToEat: '1 chammach methi dana raat ko aadhe glass paani me bhigo do. Subah paani pee lo aur daane chaba ke kha lo.'
+  },
+  {
+    name: 'Toned Curd & Chaas (Probiotics)',
+    icon: '🥣',
+    badge: 'Gut-Heart Axis Protector',
+    target: 'Digestion & Healthy Bile Circulation',
+    fact: 'Full cream dahi me saturated fat hota hai, par toned doodh ka curd/chaas safe aur protein-rich hota hai.',
+    science: 'Curd ke live cultures (Lactobacillus) gut me cholesterol molecules ko bind karke body se bahar nikalte hain.',
+    howToEat: 'Lunch me 1 bowl curd ya shaam ko jeera-pudina chaas lo. Sugar wali lassi bilkul nahi!'
+  },
+  {
+    name: 'Shuddh Akhrot (Walnuts) & Pumpkin Seeds',
+    icon: '🌰',
+    badge: 'Plant Sterols & Endothelial Shield',
+    target: 'Artery Elasticity & HDL Booster',
+    fact: 'Akhrot ekmatra dry fruit hai jisme substantial amount me plant-based omega-3 hota hai.',
+    science: 'Pumpkin seeds me phytosterols hote hain jo human cholesterol ke structure jaise hote hain aur intestine me absorption compete karke LDL ko rokte hain.',
+    howToEat: 'Roz subah sirf 2-3 akhrot ke tukde aur 1 chammach pumpkin seeds seed mix me lo.'
+  },
+  {
+    name: 'Lauki, Bhindi aur Baingan',
+    icon: '🥒',
+    badge: 'Mucilage Soluble Fiber',
+    target: 'Digestive Sweep & Liver Detox',
+    fact: 'In sabziyon ka slippery texture soluble mucilage fiber ki wajah se hota hai — yahi liver ka best friend hai.',
+    science: 'Soluble fiber intestine me sponge ki tarah kaam karta hai aur saturated fat ko blood me absorb hone se pehle rokta hai.',
+    howToEat: 'Dinner me lauki ki patli sabzi ya bhindi kam tel me banao. Dinner halka = raat ko liver ko cholesterol clean karne ka time!'
+  }
+];

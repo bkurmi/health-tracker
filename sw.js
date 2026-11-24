@@ -1,5 +1,5 @@
 // Network-first so updates show up immediately; cache fallback for offline use.
-const CACHE = 'laddoo-vs-me-v2';
+const CACHE = 'operation-227-v10';
 const ASSETS = ['./', './index.html', './styles.css', './content.js', './app.js', './manifest.webmanifest', './icon.svg'];
 
 self.addEventListener('install', e => {

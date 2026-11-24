@@ -1,35 +1,59 @@
-# Laddoo vs Me 🥊
+# Operation 227 🥊 Health Coach
 
-A one-page, no-login habit tracker for cholesterol control (LDL ↓, HDL ↑) and more protein.
-All data is stored in the browser (localStorage) on your device — no database, no server.
+A personalized, time-aware PWA health coach for **cholesterol control (LDL ↓, HDL ↑)**, **vegetarian protein**, and **snack police / continuous eating control**.
 
-## Features
-- **Coach Chacha** — time-aware check-ins every time you open the app (morning walk, breakfast, lunch, hourly craving checks 12:30–4:30 PM, chai, dinner, night). Tap-to-answer; answers auto-update checklist, protein and slips. "Baad me" snoozes 45 min.
-- **Data-driven insights** — streak/record, yesterday's score & protein, sweets left this week, fried-snack patterns, days to lipid retest, weight change.
-- **Fresh daily** — 40 quotes, 37 tips, 36 daily challenges (+3 bonus) rotating by date; 20 SOS roasts, 15 slip roasts. Edit `content.js` to add more.
-- **Monday report card** — last week's grade vs the week before.
-- **6 gradual phases** — one new rule every ~2 weeks; next phase unlocks after 14 days with 11+ days scoring 70+.
-- **Daily checklist** (only habits of the current phase), **slip counters** with weekly budgets, ghee-roti counter.
-- **Protein meter** with one-tap vegetarian foods.
-- **Craving SOS** — 10-min timer + Hinglish roasts.
-- **Wheel of Penance** — spins automatically on over-budget slips.
-- **Murukku Tax jar**, streaks, XP levels, charts (score, slips, protein, weight, LDL/HDL).
-- **Backup**: Share / Download / Import a JSON file (keep it on Google Drive or WhatsApp).
+All data is stored directly in your browser (`localStorage`) — 100% private, no database, no external servers required.
 
-## Run locally
+---
+
+## 🌟 What's New in Operation 227
+
+- 🤖 **Smart AI Meal Logger & Point Allocation**: Type or voice-type whatever you ate in plain English or Hinglish (e.g. *"2 moong chilla with dahi"*, *"3 pieces gajak"*, *"1 samosa"*). The AI calculates protein, detects trans-fat/sweets/grazing slips, allocates points, and provides witty Coach feedback.
+- 🕉️ **Vrat / Fasting Mode (Tuesday & Saturday)**:
+  - Supports **"Ek-Time" Fasting** (daytime = phalahar: fruits, dry fruits, makhana, gajak, milk/chaas; evening = regular meal).
+  - Tuesday is active by default; Saturday is toggleable in Coach & Data settings.
+  - Habits and questions adapt automatically so you aren't asked about regular grains or penalized for skipping daytime meals.
+- 🚨 **Snack Police & Danger Zone**:
+  - Continuous eating and grazing intercept between **12:30 PM – 5:00 PM**.
+  - Prominent **"CRAVING ALERT"** button with a 10-minute psychological delay timer and roasts.
+- 🎨 **Dynamic Living UI**:
+  - The interface changes throughout the day: **Morning Kickoff** (emerald/sunrise), **Snack Danger Zone** (alert coral), **Evening Wind-down** (indigo), and **Night Kitchen Lockout** (midnight dark).
+  - Modern, mobile-first design with fluid cards, elevated typography, and clean contrast.
+- 🧔‍♂️ **Interactive Coach Chacha Dialogue**:
+  - Proactive time-aware prompts based on the current hour and when you last opened the app.
+- ⚡ **Zero-Failure Hybrid Architecture**:
+  - Works 100% offline with a smart built-in Indian food heuristic dictionary.
+  - Optional: Paste your free Google Gemini API key in **Coach & Data** settings for live AI analysis (1,500 free requests/day).
+
+---
+
+## 🚀 Running Locally
+
 ```powershell
 python -m http.server 8080
 ```
-Open http://localhost:8080
+Open [http://localhost:8080](http://localhost:8080) in your browser.
 
-## Host free on GitHub Pages
+---
+
+## 📱 Mobile Installation (PWA)
+
+1. Host for free on GitHub Pages:
 ```powershell
-git init; git add .; git commit -m "Laddoo vs Me"
-gh repo create laddoo-vs-me --public --source . --push
-gh api -X POST repos/{owner}/laddoo-vs-me/pages -f "source[branch]=main" -f "source[path]=/"
+git add .
+git commit -m "Operation 227 Health Coach upgrade"
+git push
 ```
-Then open `https://<your-username>.github.io/laddoo-vs-me/` on your phone → browser menu → **Add to Home screen**.
+2. Open your GitHub Pages URL on your phone's browser (Safari / Chrome).
+3. Tap the browser menu ➔ **"Add to Home Screen"**.
 
-> Data stays on the phone you use. Use the same browser every time, avoid incognito, and take a backup weekly.
+---
+
+## 🤖 Setting Up Free Gemini AI (Optional)
+
+1. Get a free API key at [aistudio.google.com/apikey](https://aistudio.google.com/apikey) (takes 30 seconds).
+2. In the app, tap the **"⚙️ Coach & Data"** tab.
+3. Paste your key in **"AI Coach Settings"** and tap **"Save AI Key"**.
+4. The key is saved strictly on your device's browser and connects directly to Google's free API.
 
 _Not medical advice — consult your doctor._

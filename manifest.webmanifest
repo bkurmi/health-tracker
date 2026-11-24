@@ -1,12 +1,12 @@
 {
-  "name": "Laddoo vs Me",
-  "short_name": "LaddooVsMe",
-  "description": "Funny, gradual habit tracker for cholesterol control and more protein.",
+  "name": "Operation 227 🥊 Health Coach",
+  "short_name": "Op227",
+  "description": "Personalized health coach for cholesterol control (LDL ↓, HDL ↑), vegetarian protein, and snack police.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#fff7ed",
-  "theme_color": "#f97316",
+  "background_color": "#f8fafc",
+  "theme_color": "#0f172a",
   "icons": [
     { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
   ]

@@ -3,27 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#f97316">
+  <meta name="theme-color" content="#0f172a">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <title>Laddoo vs Me 🥊</title>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Operation 227 🥊 Health Coach</title>
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body data-time="morning">
   <header class="top">
     <div class="brand">
-      <h1>Laddoo vs Me 🥊</h1>
+      <div class="brand-row">
+        <h1>Operation 227 🥊</h1>
+        <div id="liveBadge" class="live-badge">
+          <span class="live-dot"></span>
+          <span id="coachStatus">Coach Active</span>
+        </div>
+      </div>
       <p id="quote" class="quote"></p>
     </div>
     <div id="chips" class="chips"></div>
   </header>
 
   <nav class="tabs">
-    <button data-tab="today" class="active">📋 Aaj</button>
-    <button data-tab="stats">📈 Stats</button>
-    <button data-tab="plan">🗺️ Plan</button>
-    <button data-tab="backup">💾 Backup</button>
+    <button data-tab="today" class="active">
+      <span>📋</span><span>Today</span>
+    </button>
+    <button data-tab="stats">
+      <span>📈</span><span>Stats</span>
+    </button>
+    <button data-tab="plan">
+      <span>🗺️</span><span>Plan</span>
+    </button>
+    <button data-tab="backup">
+      <span>⚙️</span><span>Coach &amp; Data</span>
+    </button>
   </nav>
 
   <main id="app">
@@ -34,27 +49,27 @@
     <section id="backup" class="tab" hidden></section>
   </main>
 
-  <!-- Craving SOS -->
+  <!-- Craving SOS / Snack Police Modal -->
   <div id="sosModal" class="modal" hidden>
     <div class="modal-box">
-      <h2>🚨 Craving SOS</h2>
+      <h2>🚨 Snack Police Intercept</h2>
       <p id="sosRoast" class="roast"></p>
       <div id="sosTimer" class="timer">10:00</div>
       <ol class="steps">
-        <li>💧 Ek bada glass paani piyo</li>
-        <li>🥜 <b>Desk Dabba</b> kholo (mathri ka dabba nahi!)</li>
-        <li>🚶 2 minute tehlo / 10 squats</li>
-        <li>😮‍💨 5 lambi saans</li>
+        <li>💧 <b>Pehle 1 bada glass paani piyo</b> (Bhook hai ya boredom?)</li>
+        <li>🥜 <b>Desk Dabba</b> kholo (Bhuna chana / makhana / fruit)</li>
+        <li>🚶 <b>2 min walk karo ya 10 squats lagao</b></li>
+        <li>😮‍💨 <b>5 lambi saans</b> — craving ki wave utarne do</li>
       </ol>
       <div class="row">
-        <button class="btn good" data-act="sosWin">Craving gayi! 💪</button>
+        <button class="btn good" data-act="sosWin">Craving Harayi! 💪</button>
         <button class="btn bad" data-act="sosLose">Haar gaya 😅</button>
       </div>
-      <button class="link" data-act="sosClose">Band karo</button>
+      <button class="link" data-act="sosClose" style="margin-top:10px;">Band karo</button>
     </div>
   </div>
 
-  <!-- Punishment wheel -->
+  <!-- Punishment Wheel -->
   <div id="wheelModal" class="modal" hidden>
     <div class="modal-box">
       <h2>🎡 Wheel of Penance</h2>
